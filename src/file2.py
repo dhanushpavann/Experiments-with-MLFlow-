@@ -6,10 +6,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
+import dagshub
 
-# mlflow.set_tracking_uri("sqlite:///mlflow.db")
-mlflow.set_tracking_uri("http://127.0.0.1:5050")
 
+dagshub.init(repo_owner='dhanushpavann', repo_name='Experiments-with-MLFlow-', mlflow=True)
+
+mlflow.set_tracking_uri('https://dagshub.com/dhanushpavann/Experiments-with-MLFlow-.mlflow')
 
 # Load the wine dataset
 wine= load_wine()
@@ -20,8 +22,8 @@ y = wine.target
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.10,random_state=42)
 
 # Define the parameters for RF
-n_estimators = 5
-max_depth = 10
+n_estimators = 10
+max_depth = 15
 
 # Mention your experiment below
 mlflow.set_experiment('MLOPS-1')

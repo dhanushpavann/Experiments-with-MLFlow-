@@ -58,9 +58,6 @@ with mlflow.start_run():
     mlflow.set_tags({'author':'Dhanush','Project':'Wine Classification'})
 
     # Log the model
-    # Add this before log_model
-    # input_example = X_train[:5] # A small slice of your training data
-    # mlflow.sklearn.log_model(rf, "Random-Forest-Model", input_example=input_example)
     mlflow.sklearn.log_model(rf,'Random-Forest-Model')
 
 
