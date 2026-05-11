@@ -17,7 +17,6 @@ Archived (Retirement): A critical stage for maintaining old models instead of de
 
 
 
-
 Why a Registry is Essential
 Complexity Management: In large organizations handling numerous projects, a registry keeps track of which model 
 belongs to which project and maintains specific versioning to prevent confusion.
