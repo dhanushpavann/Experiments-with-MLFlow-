@@ -2,6 +2,7 @@
 
 ### **Things That Can Be Logged by `mlflow.autolog`:**
 
+
 1. **Parameters:**
    - Hyperparameters used to train the model, such as `max_depth`, `learning_rate`, `n_estimators`, etc.
 
